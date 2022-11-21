@@ -36,4 +36,6 @@ const cartridgeSchema = new Schema(
   { timestamps: true}
 )
 
+const Cartridge = mongoose.model('Cartridge', cartridgeSchema)
+
 export { Cartridge }
