@@ -5,6 +5,6 @@ import { decodeUserFromToken, checkAuth } from '../middleware/auth.js'
 const router = Router()
 
 router.use(decodeUserFromToken)
-
+router.post('/search', cartridgesCtrl.search)
 
 export { router }
